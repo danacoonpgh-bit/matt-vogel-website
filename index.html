@@ -1,0 +1,1287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>document.documentElement.classList.add("js")</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matt Vogel | Pittsburgh Realtor | Coldwell Banker Realty</title>
+<meta name="description" content="Matt Vogel, Realtor with Coldwell Banker Realty in Pittsburgh's North Hills. 20+ years of construction experience. 5.0 stars across 32 Zillow reviews.">
+<meta property="og:title" content="Matt Vogel | Pittsburgh Realtor">
+<meta property="og:description" content="A builder's eye on every home you buy or sell. Coldwell Banker Realty, North Hills.">
+<meta property="og:image" content="img/matt-portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Matt Vogel",
+  "image": "img/matt-portrait.jpg",
+  "telephone": "+1-412-525-0112",
+  "email": "matthew.vogel@pittsburghmoves.com",
+  "worksFor": {"@type": "Organization", "name": "Coldwell Banker Realty", "telephone": "+1-412-366-1600"},
+  "address": {"@type": "PostalAddress", "streetAddress": "9600 Perry Hwy, Suite 100", "addressLocality": "Pittsburgh", "addressRegion": "PA", "postalCode": "15237"},
+  "areaServed": ["Pittsburgh", "North Hills", "Cranberry Township", "Allison Park", "Glenshaw", "Ross Township", "Shaler", "Ben Avon", "Coraopolis", "Bethel Park"],
+  "sameAs": ["https://www.instagram.com/mvrealtorpgh/", "http://www.facebook.com/matthewvogelcb/"],
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "32"}
+}
+</script>
+<style>
+:root{
+  --blue:#012169;          /* Coldwell Banker Blue, PMS 280 */
+  --blue-deep:#00143f;
+  --bright:#1f69ff;
+  --ink:#0d1526;
+  --body:#3c4659;
+  --muted:#6b7487;
+  --paper:#f6f4ef;
+  --white:#fff;
+  --line:rgba(1,33,105,.12);
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --radius:18px;
+  --wrap:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--body);background:var(--paper);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--serif);color:var(--ink);font-weight:400;line-height:1.08;letter-spacing:-.02em}
+h1{font-size:clamp(44px,6.4vw,88px)}
+h2{font-size:clamp(34px,4.4vw,58px)}
+h3{font-size:24px;line-height:1.2}
+em{font-style:italic;color:var(--blue)}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--bright);display:inline-flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .25s,background .25s,color .25s,box-shadow .25s;cursor:pointer;border:0;font-family:inherit}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 10px 30px -10px rgba(1,33,105,.6)}
+.btn-primary:hover{background:var(--bright);transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.6)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.btn svg{width:16px;height:16px}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s,padding .3s;padding:22px 0}
+.nav::before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(246,244,239,.92);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line);opacity:0;transition:opacity .3s}
+.nav.scrolled{padding:12px 0}
+.nav.scrolled::before{opacity:1}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:18px}
+.brand img{height:40px;width:auto}
+.brand .sep{width:1px;height:34px;background:var(--line)}
+.brand .agent{font-family:var(--serif);font-size:20px;color:var(--ink);line-height:1.1}
+.brand .agent small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.nav-links{display:flex;align-items:center;gap:32px;white-space:nowrap;font-size:14.5px;font-weight:500;color:var(--ink)}
+.nav-links a:not(.btn){position:relative}
+.nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:0;background:var(--blue);transition:width .3s}
+.nav-links a:not(.btn):hover::after{width:100%}
+.nav-links .btn{padding:12px 22px}
+.menu-btn{display:none;background:none;border:0;width:40px;height:40px;cursor:pointer}
+.menu-btn span{display:block;height:2px;background:var(--ink);margin:6px 8px;transition:.3s}
+
+/* HERO */
+.hero{position:relative;padding:150px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 70% 70% at 75% 40%,#000 0%,transparent 75%);opacity:.7;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+.hero h1{margin:22px 0 26px}
+.hero p.lead{font-size:20px;max-width:540px;color:var(--body)}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:38px}
+.hero-rating{display:flex;align-items:center;gap:14px;margin-top:44px;font-size:14px;color:var(--muted)}
+.stars{color:#f5b400;letter-spacing:2px;font-size:16px}
+.hero-rating strong{color:var(--ink)}
+.portrait{position:relative}
+.portrait .frame{border-radius:240px 240px var(--radius) var(--radius);overflow:hidden;aspect-ratio:4/5.4;background:#cfcdcb;box-shadow:0 40px 80px -30px rgba(1,33,105,.45)}
+.portrait .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;transform:scale(1.04);transition:transform 1.2s}
+.portrait:hover .frame img{transform:scale(1.08)}
+.chip{position:absolute;background:#fff;border-radius:14px;padding:16px 18px;box-shadow:0 20px 50px -18px rgba(13,21,38,.35);font-size:13px;line-height:1.35}
+.chip b{display:block;font-family:var(--serif);font-weight:400;font-size:30px;color:var(--blue);line-height:1}
+.chip-a{left:-48px;bottom:70px;animation:float 6s ease-in-out infinite}
+.chip-b{right:-26px;top:70px;max-width:230px;animation:float 7s ease-in-out infinite .8s}
+.chip-b .stars{font-size:13px}
+.chip-b p{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--ink);margin:6px 0 6px}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+/* PROOF */
+.proof{background:var(--blue);color:#fff;position:relative;overflow:hidden}
+.proof .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:44px 24px;border-left:1px solid rgba(255,255,255,.14)}
+.stat:first-child{border-left:0}
+.stat b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(40px,4.4vw,60px);line-height:1;letter-spacing:-.02em}
+.stat span{font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.75;display:block;margin-top:10px}
+
+section{padding:120px 0}
+.head{max-width:720px;margin-bottom:60px}
+.head h2{margin-top:18px}
+.head p{margin-top:20px;font-size:18px}
+
+/* EDGE */
+.edge{background:var(--white)}
+.edge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:38px 32px;background:var(--paper);transition:transform .4s,box-shadow .4s,border-color .4s}
+.card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(1,33,105,.35);border-color:transparent}
+.card .num{font-family:var(--serif);font-size:15px;color:var(--bright);margin-bottom:46px;display:flex;justify-content:space-between;align-items:center}
+.card .num svg{width:34px;height:34px;color:var(--blue)}
+.card h3{margin-bottom:14px}
+.edge-quote{margin-top:60px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start;padding:44px;border-radius:var(--radius);background:var(--blue-deep);color:#dfe6f5}
+.edge-quote .q{font-family:var(--serif);font-size:90px;line-height:.7;color:var(--bright)}
+.edge-quote blockquote{font-family:var(--serif);font-size:clamp(20px,2.2vw,27px);line-height:1.4;color:#fff;font-weight:300}
+.edge-quote cite{display:block;margin-top:16px;font-family:var(--sans);font-style:normal;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#9fb0d6}
+
+/* SERVICES */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.panel{border-radius:var(--radius);padding:52px 46px;position:relative;overflow:hidden}
+.panel.sell{background:var(--ink);color:#c9d0de}
+.panel.sell h3,.panel.sell .eyebrow{color:#fff}
+.panel.buy{background:#fff;border:1px solid var(--line)}
+.panel h3{font-size:clamp(28px,3vw,38px);margin:16px 0 18px}
+.steps{list-style:none;margin:30px 0 36px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;padding:16px 0;border-top:1px solid var(--line)}
+.panel.sell .steps li{border-color:rgba(255,255,255,.12)}
+.steps li::before{content:"0" counter(s);font-family:var(--serif);color:var(--bright)}
+.steps b{color:inherit;font-weight:600}
+.panel.sell .steps b{color:#fff}
+.panel.buy .steps b{color:var(--ink)}
+.panel.sell .btn-primary{background:#fff;color:var(--blue)}
+.panel.sell .btn-primary:hover{background:var(--bright);color:#fff}
+
+/* LISTINGS */
+.listings{background:var(--white)}
+.l-top{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:50px}
+.l-top .head{margin:0}
+.tabs{display:flex;gap:6px;background:var(--paper);padding:6px;border-radius:999px;border:1px solid var(--line)}
+.tabs button{border:0;background:none;font:600 14px var(--sans);padding:11px 22px;border-radius:999px;cursor:pointer;color:var(--muted)}
+.tabs button.on{background:var(--blue);color:#fff}
+.grid-l{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.grid-l[hidden]{display:none}
+.home{border-radius:var(--radius);overflow:hidden;background:var(--paper);border:1px solid var(--line);transition:transform .4s,box-shadow .4s}
+.home:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(1,33,105,.35)}
+.home .ph{aspect-ratio:3/2;overflow:hidden;position:relative;background:#dde3ee}
+.home .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.home:hover .ph img{transform:scale(1.06)}
+.tag{position:absolute;left:16px;top:16px;background:#fff;color:var(--blue);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+.tag.sold{background:var(--blue);color:#fff}
+.home .info{padding:24px 26px 26px}
+.home .price{font-family:var(--serif);font-size:30px;color:var(--ink)}
+.home .addr{font-weight:600;color:var(--ink);margin-top:4px}
+.home .meta{font-size:14px;color:var(--muted);margin-top:10px;display:flex;gap:16px}
+.home.more{display:flex;flex-direction:column;justify-content:center;padding:44px;background:var(--blue);color:#c9d4ee;border:0}
+.home.more h3{color:#fff;margin:14px 0 14px;font-size:30px}
+.home.more .btn{margin-top:22px;background:#fff;color:var(--blue);align-self:flex-start}
+
+/* REVIEWS */
+.reviews{background:var(--paper)}
+.r-head{display:grid;grid-template-columns:1fr auto;align-items:end;gap:30px;margin-bottom:56px}
+.score{display:flex;align-items:center;gap:20px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 28px}
+.score b{font-family:var(--serif);font-size:56px;font-weight:300;color:var(--blue);line-height:1}
+.score small{display:block;font-size:13px;color:var(--muted)}
+.slider{position:relative}
+.track{display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:6px}
+.track::-webkit-scrollbar{display:none}
+.review{flex:0 0 calc((100% - 56px)/3);scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px 32px;display:flex;flex-direction:column}
+.review p{font-family:var(--serif);font-size:18.5px;line-height:1.55;color:var(--ink);margin:18px 0 26px;flex:1}
+.review .who{display:flex;align-items:center;gap:14px;border-top:1px solid var(--line);padding-top:20px}
+.avatar{width:42px;height:42px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:600;font-size:15px}
+.who b{display:block;color:var(--ink);font-size:15px}
+.who span{font-size:13px;color:var(--muted)}
+.s-ctrl{display:flex;gap:10px;margin-top:34px;align-items:center}
+.s-ctrl button{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;display:grid;place-items:center;color:var(--blue);transition:.25s}
+.s-ctrl button:hover{background:var(--blue);color:#fff}
+.s-ctrl a{margin-left:auto;font-weight:600;color:var(--blue);font-size:15px}
+
+/* ABOUT */
+.about{background:var(--white)}
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:center}
+.about-img{position:relative}
+.about-img .frame{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5}
+.about-img .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+.about-img::after{content:"";position:absolute;inset:26px -26px -26px 26px;border:1px solid var(--blue);border-radius:var(--radius);z-index:-1}
+.about h2{margin:18px 0 26px}
+.about p+p{margin-top:18px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:40px;background:var(--line);border-radius:14px;overflow:hidden}
+.facts div{background:var(--paper);padding:20px 22px}
+.facts small{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600;font-size:15.5px}
+
+.ig{background:var(--white);padding:110px 0}
+.ig .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.ig h2{margin:18px 0 22px}
+.ig-handle{display:inline-flex;align-items:center;gap:14px;margin:6px 0 30px;font-family:var(--serif);font-size:clamp(26px,3vw,36px);color:var(--ink)}
+.ig-handle .badge{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;color:#fff;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285aeb 90%);box-shadow:0 14px 30px -12px rgba(214,36,159,.6)}
+.ig-handle .badge svg,.btn svg.ig-i{width:26px;height:26px}
+.btn svg.ig-i{width:18px;height:18px}
+.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.ig-grid a{position:relative;aspect-ratio:1;border-radius:14px;overflow:hidden;display:block;background:#dde3ee}
+.ig-grid img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.ig-grid a::after{content:"";position:absolute;inset:0;background:rgba(1,33,105,.55);opacity:0;transition:opacity .35s}
+.ig-grid a svg{position:absolute;z-index:1;width:34px;height:34px;left:50%;top:50%;transform:translate(-50%,-50%) scale(.8);color:#fff;opacity:0;transition:.35s}
+.ig-grid a:hover img{transform:scale(1.08)}
+.ig-grid a:hover::after{opacity:1}
+.ig-grid a:hover svg{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.ig-grid .follow{background:var(--blue);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px;font-weight:600;font-size:14px;padding:12px}
+.ig-grid .follow::after{display:none}
+.ig-grid .follow svg{position:static;opacity:1;transform:none;width:30px;height:30px}
+.nav-ig{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);color:var(--ink);transition:.25s}
+.nav-ig:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+.nav-ig::after{display:none}
+.nav-ig svg{width:18px;height:18px}
+
+/* AREAS */
+.areas{background:var(--ink);color:#aab4c8;padding:100px 0}
+.areas h2{color:#fff}
+.areas .eyebrow{color:#7fa6ff}
+.area-list{display:flex;flex-wrap:wrap;gap:12px;margin-top:44px}
+.area-list span{border:1px solid rgba(255,255,255,.16);color:#fff;padding:14px 24px;border-radius:999px;font-family:var(--serif);font-size:20px;transition:.3s}
+.area-list span:hover{background:#fff;color:var(--blue)}
+
+/* CONTACT */
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.contact h2{margin:18px 0 22px}
+.lines{margin-top:40px;display:grid;gap:4px}
+.lines a,.lines div{display:grid;grid-template-columns:120px 1fr;padding:18px 0;border-top:1px solid var(--line);font-size:16px}
+.lines small{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-top:4px}
+.contact .wrap>*{min-width:0}
+.lines span{color:var(--ink);font-weight:500;overflow-wrap:anywhere;min-width:0}
+.lines a:hover span{color:var(--bright)}
+form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:44px;box-shadow:0 40px 80px -50px rgba(1,33,105,.4)}
+form h3{margin-bottom:6px}
+form>p{font-size:15px;color:var(--muted);margin-bottom:26px}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:18px}
+.seg label{position:relative}
+.seg input{position:absolute;opacity:0}
+.seg span{display:block;text-align:center;padding:12px 8px;border:1px solid var(--line);border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;color:var(--body);transition:.2s}
+.seg input:checked+span{background:var(--blue);border-color:var(--blue);color:#fff}
+.seg input:focus-visible+span{outline:2px solid var(--bright);outline-offset:2px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--ink);margin-bottom:6px}
+.field input,.field textarea{width:100%;font:16px var(--sans);padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);transition:border-color .2s,background .2s}
+.field input:focus,.field textarea:focus{outline:0;border-color:var(--blue);background:#fff}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form .btn{width:100%;justify-content:center;margin-top:10px}
+form .fine{font-size:12px;color:var(--muted);margin-top:14px;text-align:center}
+
+/* FOOTER */
+footer{background:var(--blue-deep);color:#9fb0d6;padding:80px 0 40px;font-size:14px}
+.f-top{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:60px;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,.12)}
+.f-top img{height:64px;width:auto;margin-bottom:26px}
+.f-top h4{color:#fff;font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px;font-weight:600}
+.f-top a{display:block;padding:4px 0}
+.f-top a:hover{color:#fff}
+.equal{font-size:16px;color:#fff;font-weight:600}
+.legal{padding-top:34px;display:flex;gap:30px;align-items:flex-start;font-size:12px;line-height:1.6;color:#7f8fb6}
+.eho{flex:0 0 auto;display:flex;gap:10px;align-items:center}
+.eho svg{width:34px;height:34px}
+
+/* MOBILE CALL BAR */
+.callbar{display:none}
+
+/* REVEAL */
+.js .rv{opacity:0;transform:translateY(28px)}
+.rv{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+.js .hero .rv{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero .d1{animation-delay:.1s}.hero .d2{animation-delay:.2s}.hero .d3{animation-delay:.3s}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero .rv{animation:none}.rv{opacity:1;transform:none;transition:none}.chip{animation:none}html{scroll-behavior:auto}}
+
+@media (max-width:1020px){
+  .hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr;gap:56px}
+  .portrait{max-width:440px;margin:0 auto;width:100%}
+  .edge-grid,.grid-l{grid-template-columns:1fr 1fr}
+  .split{grid-template-columns:1fr}
+  .review{flex-basis:calc((100% - 28px)/2)}
+  .f-top{grid-template-columns:1fr 1fr}
+  .about-img{max-width:460px}
+}
+@media (max-width:940px){
+  .nav-links{position:fixed;inset:0;background:var(--paper);flex-direction:column;justify-content:center;gap:28px;font-size:22px;font-family:var(--serif);opacity:0;visibility:hidden;transform:translateY(-12px);transition:opacity .35s,transform .35s,visibility .35s}
+  .nav-links.open{opacity:1;visibility:visible;transform:none}
+  .menu-btn{display:block;position:relative;z-index:60}
+  .menu-btn.x span:first-child{transform:translateY(4px) rotate(45deg)}
+  .menu-btn.x span:last-child{transform:translateY(-4px) rotate(-45deg)}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  section{padding:84px 0}
+  .brand img{height:30px}
+  .brand .agent{font-size:17px}
+  .hero{padding:120px 0 70px}
+  .chip-a{left:-8px;bottom:30px}
+  .chip-b{right:-8px;top:24px;max-width:190px}
+  .proof .wrap{grid-template-columns:1fr 1fr}
+  .stat{padding:30px 16px}
+  .stat:nth-child(3){border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid rgba(255,255,255,.14)}
+  .edge-grid,.grid-l{grid-template-columns:1fr}
+  .edge-quote{grid-template-columns:1fr;padding:32px 26px;gap:10px}
+  .panel{padding:40px 26px}
+  .l-top,.r-head{flex-direction:column;align-items:flex-start;display:flex}
+  .review{flex-basis:88%}
+  .about-img::after{inset:16px -12px -16px 16px}
+  .facts,.row2{grid-template-columns:1fr}
+  .ig .wrap{grid-template-columns:1fr;gap:44px}
+  .ig{padding:84px 0}
+  .ig-grid{gap:6px}
+  .ig-grid a{border-radius:10px}
+  form{padding:30px 22px}
+  .lines a,.lines div{grid-template-columns:90px 1fr}
+  .f-top{grid-template-columns:1fr;gap:40px}
+  .legal{flex-direction:column}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;gap:8px;transform:translateY(140%);transition:transform .4s}
+  .callbar.show{transform:none}
+  .callbar a{padding:15px;text-align:center;border-radius:999px;font-weight:600;font-size:15px;box-shadow:0 10px 30px -10px rgba(0,0,0,.4)}
+  .callbar a:first-child{background:var(--blue);color:#fff}
+  .callbar a:last-child{background:#fff;color:var(--blue);border:1px solid var(--line)}
+  footer{padding-bottom:110px}
+}
+
+/* ===== SPLIT HERO (shared) ===== */
+.hero.hx::before{display:none}
+.hx{padding:132px 0 36px}
+.hero.hx .wrap{display:block}
+.hero.hx .hx-grid{position:relative;display:grid;grid-template-columns:.92fr 1.08fr;gap:64px;align-items:center}
+.hx h1{font-size:clamp(42px,5.2vw,74px);margin:20px 0 22px}
+.hx h1 em{display:block}
+.hx p.lead{font-size:18.5px;max-width:520px;color:var(--body)}
+.hx-stats{display:flex;flex-wrap:wrap;margin-top:28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.hx-stats div{display:flex;flex-direction:column;gap:8px;padding:16px 26px 14px 0;margin-right:26px;border-right:1px solid var(--line)}
+.hx-stats div:last-child{border-right:0;margin-right:0;padding-right:0}
+.hx-stats dd{order:-1;font-family:var(--serif);font-size:clamp(32px,3.4vw,44px);color:var(--blue);line-height:1;letter-spacing:-.02em}
+.hx-stats dt{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.hx .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.hx-contact{display:flex;gap:34px;flex-wrap:wrap;margin-top:26px}
+.hx-contact a{font-size:19px;font-weight:600;color:var(--ink);line-height:1.2;transition:color .2s}
+.hx-contact a:hover{color:var(--bright)}
+.hx-contact small{display:block;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.hx-source{margin-top:30px;font-size:12px;color:var(--muted);line-height:1.5}
+
+.ss{position:relative;min-width:0}
+.ss-media{position:relative;overflow:hidden;background:var(--blue);touch-action:pan-y}
+.ss-pic{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .9s ease,visibility 0s linear .9s}
+.ss-pic.on{opacity:1;visibility:visible;transition:opacity .9s ease}
+.ss-pic img{width:100%;height:100%;object-fit:cover}
+.ss-pic.on img{animation:ss-kb 8s ease-out both}
+@keyframes ss-kb{from{transform:scale(1.07)}to{transform:scale(1)}}
+.ss-pic-brand{background:radial-gradient(120% 100% at 90% 0%,#1f69ff 0%,#012169 55%,#00133f 100%);display:flex;flex-direction:column;justify-content:center;padding:0 9%}
+.ss-pic-brand .b-addr{font-family:var(--serif);font-size:clamp(32px,4vw,54px);line-height:1.02;letter-spacing:-.02em;color:#fff}
+.ss-pic-brand .b-sub{margin-top:14px;font-size:14px;color:rgba(255,255,255,.72);max-width:320px}
+.ss-data{display:grid}
+.ss-info{grid-area:1/1;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .5s,transform .5s,visibility 0s linear .5s}
+.ss-info.on{opacity:1;visibility:visible;transform:none;transition:opacity .6s .15s,transform .6s .15s}
+.ss-info>span{display:block}
+.si-date{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--bright)}
+.si-addr{font-size:15px;font-weight:600;color:var(--ink)}
+.si-pct{font-family:var(--serif);color:var(--blue);line-height:.95;letter-spacing:-.03em}
+.si-pct small{font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:0;color:var(--ink);margin-left:8px}
+.si-ratio{font-size:14px;color:var(--muted)}.si-ratio b{color:var(--ink);font-weight:600}
+.ss-info .si-nums{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.si-nums svg{width:14px;height:14px;color:var(--bright)}
+.si-nums b{color:var(--ink);font-weight:600}
+.si-gain{font-size:13px;font-weight:600;color:var(--blue)}
+.si-note{font-size:12.5px;font-style:italic;color:var(--muted)}
+.ss-ctrl{display:flex;align-items:center;gap:8px}
+.ss-ctrl button{width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;display:grid;place-items:center;background:#fff;color:var(--blue);box-shadow:0 8px 20px -10px rgba(1,18,60,.5);transition:transform .2s,background .2s,color .2s}
+.ss-ctrl button:hover{transform:translateY(-1px);background:var(--blue);color:#fff}
+.ss-ctrl svg{width:16px;height:16px}
+.ss-pause svg{width:13px!important;height:13px!important}.ss-pause .g{display:none}
+.ss-pause.paused .p{display:none}.ss-pause.paused .g{display:block}
+.ss-count{font-size:13px;font-weight:600;letter-spacing:.08em;min-width:46px;text-align:center}
+.ss button:focus-visible{outline:2px solid var(--bright);outline-offset:3px}
+.ss-dots{display:flex}
+.ss-dot{border:0;background:none;cursor:pointer;font-family:inherit;padding:0;position:relative}
+.ss-dot i{position:absolute;left:0;bottom:0;height:3px;width:0}
+.ss.run .ss-dot.on i{animation:ss-fill var(--dur,6.5s) linear forwards}
+@keyframes ss-fill{from{width:0}to{width:100%}}
+
+@media (max-width:1020px){.hero.hx .hx-grid{grid-template-columns:1fr;gap:44px}}
+@media (max-width:760px){
+  .hx{padding:108px 0 30px}
+  .hx-stats div{padding:14px 14px 12px 0;margin-right:14px}
+  .hx-stats dt{font-size:9.5px;letter-spacing:.08em}
+  .hx-contact{gap:22px}.hx-contact a{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){
+  .ss-pic,.ss-pic.on,.ss-info,.ss-info.on{transition:none}
+  .ss-pic.on img{animation:none}
+  .ss.run .ss-dot.on i{animation:none;width:100%}
+}
+
+/* ===== OPTION B: brand-blue panel + story bars ===== */
+.hx-b{padding:96px 0 32px}
+.hxb-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.04fr);align-items:stretch;min-height:min(820px,calc(100vh - 96px))}
+.hxb-left{display:flex;align-items:center;padding:40px 64px 40px max(28px,calc((100vw - 1200px)/2 + 28px))}
+.ssb{background:var(--blue);border-radius:34px 0 0 34px;padding:30px;display:flex;flex-direction:column;gap:24px;color:#fff;overflow:hidden}
+.ssb .ss-media{flex:1;min-height:340px;border-radius:22px;background:#00133f}
+.ssb .ss-media::after{content:"";position:absolute;inset:0 0 auto;height:90px;background:linear-gradient(rgba(0,19,63,.55),transparent);pointer-events:none;z-index:1}
+.ssb .ss-dots{position:absolute;left:16px;right:16px;top:12px;z-index:2;gap:6px}
+.ssb .ss-dot{flex:1;height:22px}
+.ssb .ss-dot::before{content:"";position:absolute;left:0;right:0;top:9px;height:3px;border-radius:3px;background:rgba(255,255,255,.35)}
+.ssb .ss-dot i{top:9px;bottom:auto;border-radius:3px;background:#fff}
+.ssb .ss-dot.past i{width:100%}
+.ssb:not(.run) .ss-dot.on i{width:100%}
+.ssb .ss-pic-brand{background:radial-gradient(120% 100% at 90% 0%,#1f69ff 0%,#0b2f8a 50%,#00133f 100%)}
+.ssb-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}
+.ssb .ss-info{display:grid;grid-template-columns:auto 1fr;grid-template-areas:"date date" "ratio addr" "ratio nums" "ratio note";column-gap:24px;row-gap:4px;align-items:center}
+.ssb .si-date{grid-area:date;color:#9dbbff;margin-bottom:6px}
+.ssb .si-ratio{grid-area:ratio;color:rgba(255,255,255,.75);font-size:13px;line-height:1.2}
+.ssb .si-ratio b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(54px,5.6vw,78px);color:#fff;letter-spacing:-.03em;line-height:.9;margin-bottom:6px}
+.ssb .si-addr{grid-area:addr;color:#fff;font-size:17px}
+.ssb .si-nums{grid-area:nums;color:rgba(255,255,255,.72)!important}
+.ssb .si-nums b{color:#fff}.ssb .si-nums svg{color:#9dbbff}
+.ssb .si-note{grid-area:note;color:rgba(255,255,255,.65)}
+.ssb .si-pct,.ssb .si-gain{display:none!important}
+.ssb .ss-ctrl{flex:none;color:#fff}
+.ssb .ss-ctrl button{background:rgba(255,255,255,.12);color:#fff;box-shadow:none}
+.ssb .ss-ctrl button:hover{background:#fff;color:var(--blue)}
+@media (max-width:1020px){
+  .hxb-grid{grid-template-columns:1fr;min-height:0}
+  .hxb-left{padding:24px 28px 44px}
+  .ssb{border-radius:28px 28px 0 0;padding:20px 20px 24px}
+  .ssb .ss-media{flex:none;aspect-ratio:4/3.2;min-height:0}
+}
+@media (max-width:760px){
+  .hx-b{padding:84px 0 28px}
+  .hxb-left{padding:24px 20px 40px}
+  .ssb-foot{flex-direction:column;align-items:stretch}
+  .ssb .ss-ctrl{justify-content:space-between}
+  .ssb .si-ratio b{font-size:56px}
+  .ssb .ss-info{column-gap:18px}
+}
+
+/* ===== VIDEO HERO: full-bleed film behind the headline ===== */
+.vh{position:relative;height:100svh;min-height:640px;max-height:1100px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:#00133f;color:#fff;padding:0}
+.vh-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vh-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,19,63,.62) 0%,rgba(0,19,63,.12) 26%,rgba(0,19,63,.3) 52%,rgba(0,19,63,.9) 100%)}
+.vh-copy{position:relative;width:100%;padding-bottom:34px}
+.vh .eyebrow{color:#cfdcff}
+.vh h1{color:#fff;font-size:clamp(44px,6.6vw,96px);margin:18px 0 20px;text-shadow:0 2px 30px rgba(0,10,40,.35)}
+.vh h1 em{color:#cfdcff;display:block}
+.vh p.lead{font-size:19px;max-width:560px;color:rgba(255,255,255,.88)}
+.vh .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.vh .btn-primary{background:#fff;color:var(--blue);box-shadow:0 14px 34px -14px rgba(0,0,0,.6)}
+.vh .btn-primary:hover{background:var(--bright);color:#fff}
+.vh .btn-ghost{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.55);color:#fff;backdrop-filter:blur(6px)}
+.vh .btn-ghost:hover{background:#fff;border-color:#fff;color:var(--blue)}
+.vh-bar{position:relative;border-top:1px solid rgba(255,255,255,.22)}
+.vh-bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:18px;padding-bottom:22px}
+.vh-phones{display:flex;gap:38px;flex-wrap:wrap}
+.vh-phones a{font-size:18px;font-weight:600;color:#fff;line-height:1.2}
+.vh-phones a:hover{color:#cfdcff}
+.vh-phones small{display:block;font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.66);margin-bottom:3px}
+.vh-side{display:flex;align-items:center;gap:18px}
+.vh-note{font-size:11.5px;color:rgba(255,255,255,.6)}
+.vh-down{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#fff;white-space:nowrap}
+.vh-down svg{width:14px;height:14px;animation:vh-bob 2.2s ease-in-out infinite}
+@keyframes vh-bob{0%,100%{transform:none}50%{transform:translateY(4px)}}
+.vh-toggle{flex:none;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.5);background:rgba(0,19,63,.35);color:#fff;display:grid;place-items:center;cursor:pointer;transition:background .2s,color .2s}
+.vh-toggle:hover{background:#fff;color:var(--blue)}
+.vh-toggle:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.vh-toggle svg{width:12px;height:12px}
+.vh-toggle .g{display:none}.vh-toggle.paused .p{display:none}.vh-toggle.paused .g{display:block}
+.js .vh .rv{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.vh .d1{animation-delay:.1s}.vh .d2{animation-delay:.2s}.vh .d3{animation-delay:.3s}
+/* nav sits clear over the film until the page scrolls */
+.brand .logo-w{display:none}
+.nav:not(.scrolled) .brand .logo-w{display:block}
+.nav:not(.scrolled) .brand .logo-b{display:none}
+.nav:not(.scrolled) .brand .agent{color:#fff}
+.nav:not(.scrolled) .brand .agent small{color:rgba(255,255,255,.75)}
+.nav:not(.scrolled) .brand .sep{background:rgba(255,255,255,.4)}
+.nav:not(.scrolled) .menu-btn:not(.x) span{background:#fff}
+@media (min-width:941px){
+  .nav:not(.scrolled) .nav-links{color:#fff}
+  .nav:not(.scrolled) .nav-links a:not(.btn)::after{background:#fff}
+  .nav:not(.scrolled) .nav-links .btn-primary{background:#fff;color:var(--blue)}
+}
+/* the seven sales now follow the film as their own band */
+.sold.hx-b{padding:84px 0 32px;position:relative}
+.sold .hxb-grid{min-height:min(660px,calc(100vh - 120px))}
+.sold h2{font-size:clamp(36px,4.4vw,60px);margin:20px 0 20px}
+.sold h2 em{display:block}
+@media (max-width:760px){
+  .vh{min-height:600px}
+  .vh-copy{padding-bottom:24px}
+  .vh p.lead{font-size:16.5px}
+  .vh .ctas{margin-top:22px}
+  .vh .btn{padding:14px 22px}
+  .vh-bar .wrap{flex-direction:column;align-items:flex-start;gap:14px;padding-top:14px;padding-bottom:18px}
+  .vh-phones{gap:24px}.vh-phones a{font-size:16px}
+  .vh-side{width:100%;justify-content:space-between;flex-wrap:wrap;row-gap:8px}
+  .vh-note{order:3;width:100%}
+  .sold.hx-b{padding:56px 0 28px}
+}
+@media (prefers-reduced-motion:reduce){.vh .rv{animation:none}.vh-down svg{animation:none}}
+
+/* ===== PROOF: ranked list ===== */
+#sold{scroll-margin-top:70px}
+.nopic{background:radial-gradient(120% 100% at 90% 0%,#1f69ff 0%,#0b2f8a 50%,#00133f 100%);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;font-family:var(--serif);line-height:1.1;padding:8px}
+.proof-b{background:var(--paper);padding:96px 0 40px}
+.pb-head{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end;margin-bottom:44px}
+.pb-head h2{margin-top:18px}
+.pb-head h2 em{display:block}
+.pb-side .hx-stats{margin-top:0}
+.pb-side .ctas{margin-top:22px;display:flex}
+.pb-list{list-style:none;border-top:1px solid var(--line)}
+.pb-row{display:grid;grid-template-columns:44px 132px minmax(0,1.25fr) minmax(0,.9fr) minmax(80px,1fr) auto;gap:26px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.pb-rank{font-family:var(--serif);font-size:30px;color:var(--bright);line-height:1}
+.pb-thumb{width:132px;aspect-ratio:3/2;border-radius:12px;overflow:hidden;font-size:13px}
+.pb-thumb img{width:100%;height:100%;object-fit:cover}
+.pb-where b{display:block;font-size:18px;font-weight:600;color:var(--ink);line-height:1.25}
+.pb-where small,.pb-nums small{display:block;font-size:13.5px;color:var(--muted)}
+.pb-nums b{display:block;font-weight:600;color:var(--ink);font-size:16px}
+.pb-bar{height:8px;border-radius:8px;background:rgba(1,33,105,.09);overflow:hidden}
+.pb-bar i{display:block;height:100%;border-radius:8px;background:linear-gradient(90deg,var(--blue),var(--bright));transform-origin:left;transition:transform 1.1s cubic-bezier(.2,.7,.2,1) .25s}
+.js .pb-row:not(.in) .pb-bar i{transform:scaleX(0)}
+.pb-ratio{text-align:right;min-width:128px}
+.pb-ratio b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(34px,3.4vw,46px);color:var(--blue);letter-spacing:-.02em;line-height:1}
+.pb-ratio small{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.pb-row:first-child .pb-ratio b{color:var(--bright)}
+.proof-b .hx-source{margin-top:26px}
+@media (max-width:1020px){
+  .pb-head{grid-template-columns:1fr;gap:26px;align-items:start}
+  .pb-row{grid-template-columns:34px 104px minmax(0,1fr) auto;gap:16px}
+  .pb-thumb{width:104px}
+  .pb-nums,.pb-bar{grid-column:3/-1}
+  .pb-nums{display:flex;gap:12px;align-items:baseline;margin-top:-8px}
+  .pb-bar{margin-top:-6px}
+  .pb-ratio{grid-column:4;grid-row:1;min-width:0}
+}
+@media (max-width:760px){
+  .proof-b{padding:64px 0 32px}
+  .pb-row{grid-template-columns:26px 76px minmax(0,1fr) auto;gap:12px;padding:16px 0}
+  .pb-rank{font-size:22px}
+  .pb-thumb{width:76px;font-size:10px;border-radius:9px}
+  .pb-where b{font-size:15.5px}
+  .pb-where small,.pb-nums small{font-size:12.5px}
+  .pb-nums b{font-size:14px}
+  .pb-ratio b{font-size:28px}
+  .pb-ratio small{font-size:9px;letter-spacing:.08em}
+}
+
+/* ===== RESULTS: Shaler + pricing ===== */
+.results{background:var(--white);padding:56px 0}
+.rs-drop{border:1px solid var(--line);border-radius:var(--radius);background:var(--paper)}
+.rs-drop>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:28px;padding:30px 36px;border-radius:var(--radius)}
+.rs-drop>summary::-webkit-details-marker{display:none}
+.rs-drop>summary:focus-visible{outline:2px solid var(--bright);outline-offset:3px}
+.rs-sum-text{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.rs-sum-title{font-family:var(--serif);color:var(--ink);font-size:clamp(26px,3vw,40px);line-height:1.1;letter-spacing:-.02em}
+.rs-sum-btn{flex:none;display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;background:var(--blue);color:#fff;font-weight:600;font-size:14.5px;transition:background .25s}
+.rs-drop>summary:hover .rs-sum-btn{background:var(--bright)}
+.rs-sum-btn svg{width:14px;height:14px;transition:transform .3s}
+.rs-drop[open] .rs-sum-btn svg{transform:rotate(180deg)}
+.rs-drop .when-open,.rs-drop[open] .when-closed{display:none}
+.rs-drop[open] .when-open{display:inline}
+.rs-intro{padding:0 36px;font-size:17px;max-width:760px}
+.rs-drop .rs-grid{padding:28px 36px 36px}
+.rs-drop .rs-card{background:var(--white)}
+@media (max-width:760px){
+  .results{padding:40px 0}
+  .rs-drop>summary{flex-direction:column;align-items:flex-start;gap:18px;padding:24px 20px}
+  .rs-intro{padding:0 20px}
+  .rs-drop .rs-grid{padding:22px 14px 20px}
+}
+.rs-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.rs-card{border:1px solid var(--line);border-radius:var(--radius);padding:40px 38px;background:var(--paper)}
+.rs-card h3{margin:16px 0 26px}
+.rs-vs{display:grid;grid-template-columns:1.2fr 1fr;gap:22px;align-items:end;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.rs-vs b{display:block;font-family:var(--serif);font-weight:400;letter-spacing:-.03em;line-height:.95}
+.rs-vs span{display:block;margin-top:10px;font-size:13px;line-height:1.4;color:var(--muted)}
+.rs-main b{font-size:clamp(50px,5.4vw,76px);color:var(--blue)}
+.rs-ref b{font-size:clamp(30px,3vw,40px);color:var(--muted)}
+.rs-facts{list-style:none;margin-top:22px;display:grid;gap:12px;font-size:15.5px;line-height:1.5}
+.rs-facts li{padding-left:18px;position:relative}
+.rs-facts li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--bright)}
+.rs-facts b{color:var(--ink);font-weight:600}
+.rs-more{margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+.rs-more summary{cursor:pointer;font-weight:600;font-size:14.5px;color:var(--blue)}
+.rs-more summary:focus-visible{outline:2px solid var(--bright);outline-offset:3px}
+.rs-more table{width:100%;border-collapse:collapse;margin-top:14px;font-size:14px}
+.rs-more th,.rs-more td{text-align:right;padding:9px 0 9px 10px;border-bottom:1px solid var(--line);font-weight:400}
+.rs-more th:first-child{text-align:left;padding-left:0;color:var(--ink);font-weight:600}
+.rs-more thead th{font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.rs-more td:last-child{color:var(--blue);font-weight:600}
+.rs-note{margin-top:22px;font-size:12px;line-height:1.55;color:var(--muted)}
+/* ===== GUIDES: client perk ===== */
+.guides{background:var(--paper)}
+.gd-grid{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.gd-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px}
+.gd-card small{display:block;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--bright);margin-bottom:14px}
+.gd-card h3{font-size:21px;margin-bottom:10px}
+.gd-card p{font-size:15px;line-height:1.55}
+.gd-cta{margin-top:36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:24px 28px;border-radius:var(--radius);background:var(--blue);color:#fff}
+.gd-cta p{font-size:17px;color:#fff}
+.gd-cta .btn-primary{background:#fff;color:var(--blue);box-shadow:none}
+.gd-cta .btn-primary:hover{background:var(--bright);color:#fff}
+@media (max-width:1020px){.rs-grid{grid-template-columns:1fr}.gd-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){
+  .rs-card{padding:30px 22px}
+  .rs-vs{grid-template-columns:1fr}
+  .rs-more table{font-size:12.5px}
+  .gd-grid{grid-template-columns:1fr}
+  .gd-cta{padding:22px}
+}
+</style>
+<link rel="stylesheet" href="quiz/quiz.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Matt Vogel, Coldwell Banker Realty">
+      <img class="logo-b" src="img/cb-logo-blue.png" alt="Coldwell Banker"><img class="logo-w" src="img/cb-logo-horiz-white.png" alt="" aria-hidden="true">
+      <span class="sep"></span>
+      <span class="agent">Matt Vogel<small>Realtor&reg;</small></span>
+    </a>
+    <nav class="nav-links" id="links">
+      <a href="#edge">Why Matt</a>
+      <a href="#homes">Homes</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="https://www.instagram.com/mvrealtorpgh/" target="_blank" rel="noopener" class="nav-ig" aria-label="Matt on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#contact" class="btn btn-primary">Let's talk</a>
+    </nav>
+    <button class="menu-btn" id="menu" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO: full-bleed film -->
+  <section class="vh" aria-label="Matt Vogel, Pittsburgh Realtor">
+    <video class="vh-vid" id="vhVid" autoplay muted loop playsinline preload="metadata" poster="img/hero-poster.jpg" aria-hidden="true" tabindex="-1"><source src="video/hero.mp4" type="video/mp4"></video>
+    <div class="vh-scrim"></div>
+    <div class="wrap vh-copy">
+      <span class="eyebrow rv">Pittsburgh &amp; the North Hills</span>
+      <h1 class="rv d1">Sold over asking. <em>Seven times.</em></h1>
+      <p class="lead rv d2">In the last two years, 7 of Matt's 13 listings sold above list price, with no price cuts. More than 20 years in construction means he knows what a home is really worth, and how to show it.</p>
+      <div class="ctas rv d3">
+        <a href="#contact" class="btn btn-primary" data-intent="Sell">What's my home worth? <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        <a href="#contact" class="btn btn-ghost">Book a free consultation</a>
+      </div>
+    </div>
+    <div class="vh-bar rv d3">
+      <div class="wrap">
+        <div class="vh-phones">
+          <a href="tel:4125250112"><small>Matt Vogel</small>412.525.0112</a>
+          <a href="tel:4123661600"><small>Coldwell Banker Realty</small>412.366.1600</a>
+        </div>
+        <div class="vh-side">
+          <span class="vh-note">Footage is illustrative, not a listing.</span>
+          <a href="#sold" class="vh-down">See the seven sales <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4"/></svg></a>
+          <button class="vh-toggle" id="vhToggle" type="button" aria-label="Pause background video"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="p" d="M5 3v10M11 3v10" stroke="currentColor" stroke-width="2.2"/><path class="g" d="M5 3l8 5-8 5z" fill="currentColor"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="about-img rv"><div class="frame"><img src="img/matt-portrait.jpg" alt="Portrait of Matt Vogel" loading="lazy"></div></div>
+      <div>
+        <span class="eyebrow rv">Meet Matt</span>
+        <h2 class="rv d1">Pittsburgh born. <em>Built from the ground up.</em></h2>
+        <p class="rv d2">Matt grew up in Bloomfield, went to Central Catholic and played baseball at Penn State Beaver. He spent more than 20 years in construction around Pittsburgh before bringing that experience to real estate with Coldwell Banker Realty.</p>
+        <p class="rv d2">His business runs on relationships and trust. Buying or selling a home is one of the biggest financial decisions you'll make, so Matt makes sure you understand every step. He even recommends talking with a few agents first, so you can choose the one you are most comfortable with.</p>
+        <p class="rv d2">Off the clock, you'll find him renovating investment properties, spending time with family, or following Pittsburgh sports.</p>
+        <div class="facts rv d3">
+          <div><small>Hometown</small><b>Bloomfield, Pittsburgh</b></div>
+          <div><small>Before real estate</small><b>20+ years in construction</b></div>
+          <div><small>Specialties</small><b>Buyers, sellers, relocation, new construction</b></div>
+          <div><small>Office</small><b>Coldwell Banker Realty, North Hills</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLD OVER ASKING: ranked list, highest sale-to-list ratio first -->
+  <div id="sold">
+  <section class="sold proof-opt proof-b" aria-label="Homes Matt sold over asking, highest over list first">
+    <div class="wrap">
+      <div class="pb-head">
+        <div>
+          <span class="eyebrow rv">The proof</span>
+          <h2 class="rv d1">Listed with a plan. <em>Sold above asking.</em></h2>
+        </div>
+        <div class="pb-side">
+          <dl class="hx-stats rv d2">
+          <div><dt>Sold over asking</dt><dd>7</dd></div>
+          <div><dt>Average above list</dt><dd>8.9%</dd></div>
+          <div><dt>Over list, combined</dt><dd>$177K</dd></div>
+        </dl>
+          <div class="ctas rv d3"><a href="#contact" class="btn btn-primary" data-intent="Sell">What's my home worth? <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
+        </div>
+      </div>
+      <ol class="pb-list">
+        <li class="pb-row rv">
+          <span class="pb-rank">1</span>
+          <div class="pb-thumb"><img src="img/h-wible.jpg" alt="835 Wible Run Rd, Shaler, sold by Matt Vogel" style="object-position:50% 60%" loading="lazy"></div>
+          <span class="pb-where"><b>835 Wible Run Rd</b><small>Shaler &middot; Sold Jun 2026</small></span>
+          <span class="pb-nums"><small>Listed $285,000</small><b>Sold $326,000</b></span>
+          <span class="pb-bar" aria-hidden="true"><i style="width:100.0%"></i></span>
+          <span class="pb-ratio"><b>114.4%</b><small>of list price</small></span>
+        </li>
+        <li class="pb-row rv">
+          <span class="pb-rank">2</span>
+          <div class="pb-thumb"><img src="img/h-baden.jpg" alt="1050 5th St, Baden, sold by Matt Vogel" style="object-position:50% 55%" loading="lazy"></div>
+          <span class="pb-where"><b>1050 5th St</b><small>Baden &middot; Sold Jul 2025</small></span>
+          <span class="pb-nums"><small>Listed $220,000</small><b>Sold $250,000</b></span>
+          <span class="pb-bar" aria-hidden="true"><i style="width:94.4%"></i></span>
+          <span class="pb-ratio"><b>113.6%</b><small>of list price</small></span>
+        </li>
+        <li class="pb-row rv">
+          <span class="pb-rank">3</span>
+          <div class="pb-thumb"><img src="img/h-schar.jpg" alt="125 Schar Ct, Shaler, sold by Matt Vogel" style="object-position:50% 62%" loading="lazy"></div>
+          <span class="pb-where"><b>125 Schar Ct</b><small>Shaler &middot; Sold Nov 2026</small></span>
+          <span class="pb-nums"><small>Listed $309,000</small><b>Sold $350,000</b></span>
+          <span class="pb-bar" aria-hidden="true"><i style="width:92.4%"></i></span>
+          <span class="pb-ratio"><b>113.3%</b><small>of list price</small></span>
+        </li>
+        <li class="pb-row rv">
+          <span class="pb-rank">4</span>
+          <div class="pb-thumb"><img src="img/s-oldperry.jpg" alt="9431 Old Perry Hwy, Pittsburgh, sold by Matt Vogel" style="object-position:50% 45%" loading="lazy"></div>
+          <span class="pb-where"><b>9431 Old Perry Hwy</b><small>Pittsburgh &middot; Sold Oct 2026</small></span>
+          <span class="pb-nums"><small>Listed $325,000</small><b>Sold $355,000</b></span>
+          <span class="pb-bar" aria-hidden="true"><i style="width:63.9%"></i></span>
+          <span class="pb-ratio"><b>109.2%</b><small>of list price</small></span>
+        </li>
+        <li class="pb-row rv">
+          <span class="pb-rank">5</span>
+          <div class="pb-thumb nopic" role="img" aria-label="1601 Shawmut Dr, Glenshaw. No listing photo available."><span>1601 Shawmut Dr</span></div>
+          <span class="pb-where"><b>1601 Shawmut Dr</b><small>Glenshaw &middot; Sold Dec 2024 &middot; Matt represented buyer and seller</small></span>
+          <span class="pb-nums"><small>Listed $325,000</small><b>Sold $345,000</b></span>
+          <span class="pb-bar" aria-hidden="true"><i style="width:43.1%"></i></span>
+          <span class="pb-ratio"><b>106.2%</b><small>of list price</small></span>
+        </li>
+        <li class="pb-row rv">
+          <span class="pb-rank">6</span>
+          <div class="pb-thumb"><img src="img/h-joan111.jpg" alt="111 Joan Dr, Shaler, sold by Matt Vogel" style="object-position:50% 55%" loading="lazy"></div>
+          <span class="pb-where"><b>111 Joan Dr</b><small>Shaler &middot; Sold Aug 2026</small></span>
+          <span class="pb-nums"><small>Listed $250,000</small><b>Sold $260,000</b></span>
+          <span class="pb-bar" aria-hidden="true"><i style="width:27.8%"></i></span>
+          <span class="pb-ratio"><b>104.0%</b><small>of list price</small></span>
+        </li>
+        <li class="pb-row rv">
+          <span class="pb-rank">7</span>
+          <div class="pb-thumb"><img src="img/h-joan107.jpg" alt="107 Joan Dr, Shaler, sold by Matt Vogel" style="object-position:50% 50%" loading="lazy"></div>
+          <span class="pb-where"><b>107 Joan Dr</b><small>Shaler &middot; Sold Sep 2026</small></span>
+          <span class="pb-nums"><small>Listed $310,000</small><b>Sold $315,000</b></span>
+          <span class="pb-bar" aria-hidden="true"><i style="width:11.1%"></i></span>
+          <span class="pb-ratio"><b>101.6%</b><small>of list price</small></span>
+        </li>
+      </ol>
+      <p class="hx-source">Sales data: West Penn MLS via Coldwell Banker and Zillow price history, Dec 2024 to Nov 2026, read Nov 11, 2026. Matt's listing sales only. Ranked by sale price as a share of list price. Past results don't guarantee future results.</p>
+    </div>
+  </section>
+
+  </div>
+
+  <!-- RESULTS: Shaler + pricing, figures and data notes from Matt's packets -->
+  <section class="results" id="results">
+    <div class="wrap">
+      <details class="rs-drop rv">
+      <summary>
+        <span class="rs-sum-text">
+          <span class="eyebrow">The longer record</span>
+          <span class="rs-sum-title">Results in Shaler, <em>and what pricing did.</em></span>
+        </span>
+        <span class="rs-sum-btn"><span class="when-closed">Show the results</span><span class="when-open">Hide the results</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg></span>
+      </summary>
+      <p class="rs-intro">Two looks at Matt's own listing history since 2019, with the notes on where each number comes from.</p>
+      <div class="rs-grid">
+        <article class="rs-card">
+          <span class="eyebrow">Shaler Township</span>
+          <h3>Eight highlighted Shaler listings, every one at or above list.</h3>
+          <div class="rs-vs">
+            <div class="rs-main"><b>106.65%</b><span>Matt's highlighted Shaler listings, sale price to list price</span></div>
+            <div class="rs-ref"><b>97.53%</b><span>Entire MLS, sold price to list price</span></div>
+          </div>
+          <ul class="rs-facts">
+            <li><b>+9.12 points</b> above the MLS figure</li>
+            <li><b>$2,194,000</b> combined list price, <b>$2,340,000</b> combined sale or agreed price</li>
+            <li><b>27</b> Shaler transactions in all: 8 of these listings, 3 seller-preferred-price listings and 16 buyer-side sales</li>
+          </ul>
+          <details class="rs-more">
+            <summary>See the eight listings</summary>
+            <table>
+              <thead><tr><th scope="col">Property</th><th scope="col">List</th><th scope="col">Sale / agreed</th><th scope="col">Ratio</th></tr></thead>
+              <tbody>
+              <tr><th scope="row">1514 Maple Ave</th><td>$125,000</td><td>$150,000</td><td>120.00%</td></tr>
+              <tr><th scope="row">835 Wible Run Rd</th><td>$285,000</td><td>$326,000</td><td>114.39%</td></tr>
+              <tr><th scope="row">103 Joan Dr</th><td>$260,000</td><td>$281,000</td><td>108.08%</td></tr>
+              <tr><th scope="row">1601 Shawmut Dr</th><td>$325,000</td><td>$345,000</td><td>106.15%</td></tr>
+              <tr><th scope="row">111 Joan Dr*</th><td>$250,000</td><td>$260,000</td><td>104.00%</td></tr>
+              <tr><th scope="row">100 Joan Dr</th><td>$275,000</td><td>$285,000</td><td>103.64%</td></tr>
+              <tr><th scope="row">907 Rutgers Dr</th><td>$289,000</td><td>$298,000</td><td>103.11%</td></tr>
+              <tr><th scope="row">1914 Woodside Rd</th><td>$385,000</td><td>$395,000</td><td>102.60%</td></tr>
+              </tbody>
+            </table>
+          </details>
+          <p class="rs-note">Data note: Agent Production &amp; Inventory Report, 01/01/2019 to 08/07/2026. The 106.65% is the combined sale or agreed price divided by the combined list price for the eight listings Matt highlights. *111 Joan Dr was under contract when the report was run and is counted at its expected $260,000 price. Three more Shaler listings, priced at the seller's preferred price, sold at a combined 97.93% of list and are not part of the 106.65%. The 97.53% is the report's "Total Sold / Entire MLS" figure. Historical results do not guarantee future performance.</p>
+        </article>
+        <article class="rs-card">
+          <span class="eyebrow">Pricing strategy</span>
+          <h3>How competitively priced listings sold, next to the rest.</h3>
+          <div class="rs-vs">
+            <div class="rs-main"><b>110.11%</b><span>Competitively positioned listings, sale price to list price</span></div>
+            <div class="rs-ref"><b>97.48%</b><span>Matt's other listings, sale price to list price</span></div>
+          </div>
+          <ul class="rs-facts">
+            <li><b>16</b> closed listings in the competitive group: $3,869,000 listed, $4,260,000 sold</li>
+            <li><b>20</b> other closed listings: $7,025,000 listed, $6,848,289 sold</li>
+            <li>These are different homes, not matched comparisons. A higher ratio does not establish a higher market value, a larger seller net, or a guaranteed advantage from a lower list price.</li>
+          </ul>
+          <p class="rs-note">Data note: Agent Production &amp; Inventory Report, January 2019 to October 2026, supplied October 28, 2026; 36 individually visible closed listings. Ratios are total sale prices divided by total list prices for each group. No offer counts, original pricing intent, concessions or actual seller net were verified from the report. Historical figures are descriptive, not guarantees.</p>
+        </article>
+      </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <div class="proof">
+    <div class="wrap">
+      <div class="stat"><b data-count="5.0">5.0</b><span>Zillow rating</span></div>
+      <div class="stat"><b data-count="32">32</b><span>Five-star reviews</span></div>
+      <div class="stat"><b data-count="95">95</b><span>Homes sold on Zillow</span></div>
+      <div class="stat"><b>20+</b><span>Years in construction</span></div>
+    </div>
+  </div>
+
+  <!-- EDGE -->
+  <section class="edge" id="edge">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow rv">The builder's edge</span>
+        <h2 class="rv d1">Most agents see paint and staging. <em>Matt sees the bones.</em></h2>
+        <p class="rv d2">Before real estate, Matt spent more than 20 years building and fixing homes across Pittsburgh. That background changes what you know before you sign anything.</p>
+      </div>
+      <div class="edge-grid">
+        <div class="card rv">
+          <div class="num">01 <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15 16 5l12 10M7 13v14h18V13"/><circle cx="16" cy="19" r="3.5"/><path d="m18.5 21.5 3 3"/></svg></div>
+          <h3>Showings that go deeper</h3>
+          <p>Roof, foundation, mechanicals, windows. Matt walks every home looking for what the listing photos don't show, so you find out before you fall in love.</p>
+        </div>
+        <div class="card rv d1">
+          <div class="num">02 <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="4" width="20" height="24" rx="2"/><path d="M10 10h12M10 15h12M10 20h7"/><path d="M20 22l2 2 4-5"/></svg></div>
+          <h3>Real numbers on repairs</h3>
+          <p>"That needs work" isn't an answer. Matt gives you a realistic sense of what a fix costs, so your offer and your budget reflect the real house.</p>
+        </div>
+        <div class="card rv d2">
+          <div class="num">03 <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 22h24M8 22V12m8 10V8m8 14V15"/><path d="m5 9 7-4 7 4 8-4"/></svg></div>
+          <h3>Sharper negotiating</h3>
+          <p>When inspection results come back, Matt knows which items matter and what they're worth. That's leverage, whether you're buying or selling.</p>
+        </div>
+      </div>
+      <div class="edge-quote rv">
+        <div class="q">&ldquo;</div>
+        <div>
+          <blockquote>At every house, Matt had the experience and knowledge to point out potential and future repairs and needs, as well as estimate their likely expense.</blockquote>
+          <cite>Andrea M. &middot; Bought in Allison Park, 2025</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow rv">How it works</span>
+        <h2 class="rv d1">A clear plan, <em>start to keys.</em></h2>
+        <p class="rv d2">Every relationship starts with a no-pressure consultation. You'll know exactly how the process works, and whether Matt is the right fit, before you commit to anything.</p>
+      </div>
+      <div class="split">
+        <div class="panel sell rv">
+          <span class="eyebrow">Selling</span>
+          <h3>Get top dollar, without the guesswork.</h3>
+          <ul class="steps">
+            <li><span><b>Walkthrough and pricing.</b> A builder's read on your home plus a market analysis grounded in real comps.</span></li>
+            <li><span><b>Prep that pays.</b> Which fixes add value and which to skip, so you don't overspend before listing.</span></li>
+            <li><span><b>A custom marketing plan.</b> Coldwell Banker reach, professional presentation and social media built for your home.</span></li>
+            <li><span><b>Negotiation to close.</b> Offers, inspections and appraisal handled with you at every step.</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" data-intent="Sell">What's my home worth?</a>
+        </div>
+        <div class="panel buy rv d1">
+          <span class="eyebrow">Buying</span>
+          <h3>Find the right house, not just a house.</h3>
+          <ul class="steps">
+            <li><span><b>Buyer consultation.</b> Budget, must-haves and the neighborhoods that fit your life.</span></li>
+            <li><span><b>Tours with a trained eye.</b> Honest takes on condition, repairs and long-term costs.</span></li>
+            <li><span><b>A smart offer.</b> Built on what the home is really worth, condition included.</span></li>
+            <li><span><b>Through closing.</b> Inspections, appraisal and every deadline, managed.</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" data-intent="Buy">Start my home search</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDES: a client perk, not downloads -->
+  <section class="guides" id="guides">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow rv">When you work with Matt</span>
+        <h2 class="rv d1">Guides that make each step <em>easier to understand.</em></h2>
+        <p class="rv d2">Matt's clients get his own guides along the way, so you understand each decision before you make it and have a better experience from start to finish.</p>
+      </div>
+      <ul class="gd-grid">
+        <li class="gd-card rv">
+          <small>Buyers</small>
+          <h3>Offer strategy guide</h3>
+          <p>How sellers weigh price, financing, contingencies and timing, and how to build a competitive offer when there is more than one.</p>
+        </li>
+        <li class="gd-card rv">
+          <small>Sellers</small>
+          <h3>Pricing strategy</h3>
+          <p>Two ways to launch a home, the tradeoffs of each, and why the highest offer is not always the best net.</p>
+        </li>
+        <li class="gd-card rv">
+          <small>Sellers</small>
+          <h3>Listing preparation timeline</h3>
+          <p>What to do before the sign goes up: a seller's timeline, a photography checklist and what to expect from Matt.</p>
+        </li>
+        <li class="gd-card rv">
+          <small>Sellers</small>
+          <h3>Multiple offer guide</h3>
+          <p>How to compare offers on price, terms, risk and net proceeds when several arrive at once.</p>
+        </li>
+        <li class="gd-card rv">
+          <small>Sellers</small>
+          <h3>Listing documents review guide</h3>
+          <p>A plain-language walk through the seller paperwork, with the parts Matt most wants you to read.</p>
+        </li>
+        <li class="gd-card rv">
+          <small>Buyers and sellers</small>
+          <h3>The Real Estate Adventure activity guide</h3>
+          <p>Crosswords, quizzes and real-life decisions that teach the language of buying and selling.</p>
+        </li>
+      </ul>
+      <div class="gd-cta rv">
+        <p>The guides come with working together. Start with a no-pressure conversation.</p>
+        <a href="#contact" class="btn btn-primary">Talk with Matt <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- TEST YOUR KNOWLEDGE TEASER -->
+  <div id="tyk-teaser"></div>
+  <!-- LISTINGS -->
+  <section class="listings" id="homes">
+    <div class="wrap">
+      <div class="l-top">
+        <div class="head">
+          <span class="eyebrow rv">Homes</span>
+          <h2 class="rv d1">On the market <em>and recently sold.</em></h2>
+        </div>
+        <div class="tabs rv" role="tablist">
+          <button class="on" data-tab="active" role="tab" aria-selected="true">For sale</button>
+          <button data-tab="sold" role="tab" aria-selected="false">Recently sold</button>
+        </div>
+      </div>
+
+      <div class="grid-l" id="tab-active">
+        <article class="home rv">
+          <div class="ph"><img src="img/l-york.jpg" alt="94 York Dr, Pittsburgh" loading="lazy"><span class="tag">Open Sat 12-2</span></div>
+          <div class="info"><div class="price">$235,000</div><div class="addr">94 York Dr, Pittsburgh 15214</div><div class="meta"><span>3 bd</span><span>2 ba</span><span>1,172 sqft</span></div></div>
+        </article>
+        <article class="home rv d1">
+          <div class="ph"><img src="img/l-meadowvale.jpg" alt="553 Meadowvale Dr, Cheswick" loading="lazy"><span class="tag">3D tour</span></div>
+          <div class="info"><div class="price">$239,900</div><div class="addr">553 Meadowvale Dr, Cheswick 15024</div><div class="meta"><span>3 bd</span><span>2 ba</span></div></div>
+        </article>
+        <article class="home more rv d2">
+          <span class="eyebrow" style="color:#9fbaff">Search</span>
+          <h3>Looking for something specific?</h3>
+          <p>Tell Matt what you want and he'll send you homes the day they hit the market.</p>
+          <a href="#contact" class="btn" data-intent="Buy">Get matched homes</a>
+        </article>
+      </div>
+
+      <div class="grid-l" id="tab-sold" hidden>
+        <article class="home">
+          <div class="ph"><img src="img/s-oldperry.jpg" alt="9431 Old Perry Hwy" loading="lazy"><span class="tag sold">Sold &middot; Seller</span></div>
+          <div class="info"><div class="price">$355,000</div><div class="addr">9431 Old Perry Hwy, Pittsburgh 15237</div><div class="meta"><span>5 bd</span><span>3 ba</span><span>2,243 sqft</span></div></div>
+        </article>
+        <article class="home">
+          <div class="ph"><img src="img/s-kingcharles.jpg" alt="1538 King Charles Dr" loading="lazy"><span class="tag sold">Sold &middot; Buyer</span></div>
+          <div class="info"><div class="price">$470,000</div><div class="addr">1538 King Charles Dr, Pittsburgh 15237</div><div class="meta"><span>3 bd</span><span>3 ba</span><span>1,520 sqft</span></div></div>
+        </article>
+        <article class="home">
+          <div class="ph"><img src="img/s-kilbuck.jpg" alt="726 Kilbuck Dr" loading="lazy"><span class="tag sold">Sold &middot; Buyer</span></div>
+          <div class="info"><div class="price">$385,000</div><div class="addr">726 Kilbuck Dr, Cranberry Twp 16066</div><div class="meta"><span>3 bd</span><span>3 ba</span></div></div>
+        </article>
+        <article class="home">
+          <div class="ph"><img src="img/s-gamefarm.jpg" alt="152 Game Farm Rd" loading="lazy"><span class="tag sold">Sold &middot; Buyer</span></div>
+          <div class="info"><div class="price">$520,000</div><div class="addr">152 Game Farm Rd, New Castle 16101</div><div class="meta"><span>4 bd</span><span>2 ba</span><span>1,744 sqft</span></div></div>
+        </article>
+        <article class="home more">
+          <span class="eyebrow" style="color:#9fbaff">Selling?</span>
+          <h3>Your home could be next.</h3>
+          <p>Get a free, no-obligation value estimate with a builder's take on what buyers will notice.</p>
+          <a href="#contact" class="btn" data-intent="Sell">Get my home value</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="r-head">
+        <div class="head" style="margin:0">
+          <span class="eyebrow rv">Client stories</span>
+          <h2 class="rv d1">"Matt is <em>more than a realtor.</em>"</h2>
+        </div>
+        <div class="score rv"><b>5.0</b><div><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><small>32 verified reviews on Zillow</small></div></div>
+      </div>
+      <div class="slider rv">
+        <div class="track" id="track">
+          <article class="review"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>"We were on a time crunch and Matt went above and beyond. He's quick to answer every text and call. He even checked in while he was on vacation to keep the timeline moving."</p><div class="who"><span class="avatar">RW</span><div><b>Rachel W.</b><span>Bought and sold, 2026</span></div></div></article>
+          <article class="review"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>"As a first-time homebuyer there were a few bumps in the road, but every challenge felt manageable because Matt was always there to guide me through it."</p><div class="who"><span class="avatar">AW</span><div><b>Autumn W.</b><span>First home, Cranberry Twp, 2026</span></div></div></article>
+          <article class="review"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>"Matt was the pinnacle of patience, working with us over a year and a half and never pressuring us to buy until the house was right for us."</p><div class="who"><span class="avatar">AM</span><div><b>Andrea M.</b><span>Bought in Allison Park, 2025</span></div></div></article>
+          <article class="review"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>"Matt stepped in for us at the last minute and quickly became an incredible partner. When we ran into unexpected complications, he was deeply invested in finding a resolution."</p><div class="who"><span class="avatar">RR</span><div><b>Renee R.</b><span>First home, Pittsburgh, 2025</span></div></div></article>
+          <article class="review"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>"He was always there when we needed him and will really give you the honest truth when it comes to buying a home."</p><div class="who"><span class="avatar">DL</span><div><b>Dom L.</b><span>Bought in Ben Avon, 2025</span></div></div></article>
+        </div>
+        <div class="s-ctrl">
+          <button aria-label="Previous review" data-dir="-1"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 8H3M7 4 3 8l4 4"/></svg></button>
+          <button aria-label="Next review" data-dir="1"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+          <a href="https://www.zillow.com/profile/matthew%20vogel5" target="_blank" rel="noopener">Read all 32 on Zillow &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="ig" id="instagram">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow rv">Follow along</span>
+        <h2 class="rv d1">Pittsburgh homes, <em>straight to your feed.</em></h2>
+        <a class="ig-handle rv d2" href="https://www.instagram.com/mvrealtorpgh/" target="_blank" rel="noopener"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></span>@mvrealtorpgh</a>
+        <p class="rv d2">New listings, open houses, recent sales and a builder's take on what makes a house worth it. Follow Matt on Instagram to see homes as they hit the market.</p>
+        <div class="ctas rv d3" style="margin-top:32px"><a href="https://www.instagram.com/mvrealtorpgh/" target="_blank" rel="noopener" class="btn btn-primary"><svg class="ig-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg> Follow @mvrealtorpgh</a></div>
+      </div>
+      <div class="ig-grid rv d1">
+        <a href="https://www.instagram.com/mvrealtorpgh/" target="_blank" rel="noopener" aria-label="Matt on Instagram"><img src="img/l-york.jpg" alt="Home on York Dr" loading="lazy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.instagram.com/mvrealtorpgh/" target="_blank" rel="noopener" aria-label="Matt on Instagram"><img src="img/s-kingcharles.jpg" alt="Home on King Charles Dr" loading="lazy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.instagram.com/mvrealtorpgh/" target="_blank" rel="noopener" aria-label="Matt on Instagram"><img src="img/s-oldperry.jpg" alt="Home on Old Perry Hwy" loading="lazy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.instagram.com/mvrealtorpgh/" target="_blank" rel="noopener" aria-label="Matt on Instagram"><img src="img/l-meadowvale.jpg" alt="Home on Meadowvale Dr" loading="lazy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.instagram.com/mvrealtorpgh/" target="_blank" rel="noopener" class="follow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg><span>Follow<br>@mvrealtorpgh</span></a>
+        <a href="https://www.instagram.com/mvrealtorpgh/" target="_blank" rel="noopener" aria-label="Matt on Instagram"><img src="img/s-kilbuck.jpg" alt="Home on Kilbuck Dr" loading="lazy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREAS -->
+  <section class="areas">
+    <div class="wrap">
+      <span class="eyebrow rv">Where Matt works</span>
+      <h2 class="rv d1">From the North Hills to every corner of Pittsburgh.</h2>
+      <div class="area-list rv d2">
+        <span>North Hills</span><span>Cranberry Township</span><span>Allison Park</span><span>Glenshaw</span><span>Ross Township</span><span>Shaler</span><span>Ben Avon</span><span>Coraopolis</span><span>Bethel Park</span><span>City of Pittsburgh</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow rv">Let's talk</span>
+        <h2 class="rv d1">Your next move <em>starts with a conversation.</em></h2>
+        <p class="rv d2">No pressure and no obligation. Just a straight answer on what your home is worth or what it'll take to get into the one you want.</p>
+        <div class="lines rv d3">
+          <a href="tel:4125250112"><small>Cell</small><span>412.525.0112</span></a>
+          <a href="mailto:matthew.vogel@pittsburghmoves.com"><small>Email</small><span>matthew.vogel@pittsburghmoves.com</span></a>
+          <a href="https://maps.google.com/?q=9600+Perry+Hwy+Suite+100+Pittsburgh+PA+15237" target="_blank" rel="noopener"><small>Office</small><span>9600 Perry Hwy, Suite 100<br>Pittsburgh, PA 15237</span></a>
+          <a href="https://www.instagram.com/mvrealtorpgh/" target="_blank" rel="noopener"><small>Instagram</small><span>@mvrealtorpgh</span></a>
+          <a href="http://www.facebook.com/matthewvogelcb/" target="_blank" rel="noopener"><small>Facebook</small><span>matthewvogelcb</span></a>
+        </div>
+      </div>
+      <form id="form" class="rv d1" novalidate>
+        <h3>Send Matt a note</h3>
+        <p>Tell Matt a little about your plans and he will be in touch.</p>
+        <div class="seg" role="radiogroup" aria-label="I want to">
+          <label><input type="radio" name="intent" value="Buy" checked><span>Buy</span></label>
+          <label><input type="radio" name="intent" value="Sell"><span>Sell</span></label>
+          <label><input type="radio" name="intent" value="Both"><span>Both</span></label>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="n">Name</label><input id="n" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="m">What are you looking for?</label><textarea id="m" name="message" rows="4" placeholder="Timeline, neighborhoods, the home you're selling..."></textarea></div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <div class="fine">Prefer to talk? Call or text <a href="tel:4125250112" style="color:var(--blue);font-weight:600">412.525.0112</a></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <img src="img/cb-logo-horiz-white.png" alt="Coldwell Banker">
+        <p class="equal">Coldwell Banker Realty &middot; 412.366.1600</p>
+        <p style="margin-top:8px">9600 Perry Hwy, Suite 100, Pittsburgh, PA 15237</p>
+      </div>
+      <div>
+        <h4>Matt Vogel, Realtor&reg;</h4>
+        <a href="tel:4125250112">Cell 412.525.0112</a>
+        <a href="mailto:matthew.vogel@pittsburghmoves.com">matthew.vogel@pittsburghmoves.com</a>
+        <a href="https://www.instagram.com/mvrealtorpgh/" target="_blank" rel="noopener">Instagram @mvrealtorpgh</a>
+        <a href="http://www.facebook.com/matthewvogelcb/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#edge">The builder's edge</a>
+        <a href="#homes">Homes</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Free home value</a>
+      </div>
+    </div>
+    <div class="legal">
+      <div class="eho" aria-label="Equal Housing Opportunity and Realtor">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18 20 5l16 13"/><path d="M8 15v20h24V15"/><path d="M14 22h12M14 28h12"/></svg>
+      </div>
+      <p>&copy; 2026 Coldwell Banker. All Rights Reserved. Coldwell Banker and the Coldwell Banker logos are trademarks of Coldwell Banker Real Estate LLC. The Coldwell Banker&reg; System is comprised of company owned offices which are owned by a subsidiary of Anywhere Real Estate Inc. and franchised offices which are independently owned and operated. The Coldwell Banker System fully supports the principles of the Fair Housing Act and the Equal Opportunity Act. Ratings and sales counts as shown on Zillow.com, October 2026. Listing information deemed reliable but not guaranteed.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" id="callbar">
+  <a href="tel:4125250112">Call Matt</a>
+  <a href="#contact">Send a note</a>
+</div>
+
+<script>
+(() => {
+  const nav = document.getElementById('nav');
+  const bar = document.getElementById('callbar');
+  const onScroll = () => {
+    nav.classList.toggle('scrolled', scrollY > 30);
+    bar.classList.toggle('show', scrollY > innerHeight * .8);
+  };
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // video hero: pause control, and no motion for visitors who ask for less
+  (() => {
+    const v = document.getElementById('vhVid'), t = document.getElementById('vhToggle');
+    if (!v || !t) return;
+    const set = paused => { t.classList.toggle('paused', paused); t.setAttribute('aria-label', paused ? 'Play background video' : 'Pause background video'); };
+    if (matchMedia('(prefers-reduced-motion:reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); set(true); }
+    t.addEventListener('click', () => { if (v.paused) { v.play(); set(false); } else { v.pause(); set(true); } });
+  })();
+
+  // mobile menu
+  const menu = document.getElementById('menu'), links = document.getElementById('links');
+  const setMenu = open => { links.classList.toggle('open', open); menu.classList.toggle('x', open); menu.setAttribute('aria-expanded', open); document.body.style.overflow = open ? 'hidden' : ''; };
+  menu.addEventListener('click', () => setMenu(!links.classList.contains('open')));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+  // reveal on scroll
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12, rootMargin:'0px 0px -40px'});
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+  // safety net: never leave content hidden if the observer is slow to fire
+  setTimeout(() => document.querySelectorAll('.rv:not(.in)').forEach(el => { if (el.getBoundingClientRect().top < innerHeight) el.classList.add('in'); }), 1200);
+
+  // count-up stats
+  const cio = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return; cio.unobserve(e.target);
+    const el = e.target, end = parseFloat(el.dataset.count), dec = el.dataset.count.includes('.') ? 1 : 0, t0 = performance.now();
+    const tick = t => { const p = Math.min((t - t0) / 1400, 1), v = end * (1 - Math.pow(1 - p, 3)); el.textContent = v.toFixed(dec); if (p < 1) requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+  }), {threshold:.6});
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
+
+  // listing tabs
+  document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.tabs button').forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-selected', x === b); });
+    document.getElementById('tab-active').hidden = b.dataset.tab !== 'active';
+    document.getElementById('tab-sold').hidden = b.dataset.tab !== 'sold';
+  }));
+
+  // review slider
+  const track = document.getElementById('track');
+  document.querySelectorAll('.s-ctrl button').forEach(b => b.addEventListener('click', () => {
+    const step = track.querySelector('.review').offsetWidth + 28;
+    track.scrollBy({left: step * +b.dataset.dir, behavior:'smooth'});
+  }));
+
+  // CTAs preselect buy/sell
+  document.querySelectorAll('[data-intent]').forEach(a => a.addEventListener('click', () => {
+    const r = document.querySelector(`input[name=intent][value="${a.dataset.intent}"]`); if (r) r.checked = true;
+  }));
+
+  // contact form: opens the visitor's email app addressed to Matt (no server needed)
+  document.getElementById('form').addEventListener('submit', e => {
+    e.preventDefault();
+    const f = e.target, d = Object.fromEntries(new FormData(f));
+    if (!d.name || !d.email) { (d.name ? f.email : f.name).focus(); return; }
+    const body = `I'm looking to: ${d.intent}\nName: ${d.name}\nPhone: ${d.phone || ''}\nEmail: ${d.email}\n\n${d.message || ''}`;
+    location.href = `mailto:matthew.vogel@pittsburghmoves.com?subject=${encodeURIComponent('Website inquiry: ' + d.intent)}&body=${encodeURIComponent(body)}`;
+  });
+  // split hero slideshow: prev/next, dots, keys, swipe, autoplay that pauses on hover/focus; no autoplay with reduced motion
+  document.querySelectorAll('[data-ss]').forEach(root => {
+    const pics = [...root.querySelectorAll('.ss-pic')], infos = [...root.querySelectorAll('.ss-info')], dots = [...root.querySelectorAll('.ss-dot')];
+    const n = root.querySelector('.ss-n'), pb = root.querySelector('.ss-pause'), data = root.querySelector('.ss-data'), bar = root.querySelector('.ss-dots');
+    const N = pics.length, DUR = 6500, still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let i = 0, t = null, paused = still, hold = false;
+    root.style.setProperty('--dur', DUR + 'ms');
+    const run = () => {
+      clearTimeout(t); root.classList.remove('run'); void root.offsetWidth;
+      if (paused || hold) return;
+      root.classList.add('run'); t = setTimeout(() => go(i + 1), DUR);
+    };
+    const go = (k, user) => {
+      i = (k + N) % N;
+      [pics, infos, dots].forEach(a => a.forEach((el, j) => { el.classList.toggle('on', j === i); el.classList.toggle('past', j < i); }));
+      pics.forEach((el, j) => el.setAttribute('aria-hidden', j !== i));
+      infos.forEach((el, j) => el.setAttribute('aria-hidden', j !== i));
+      dots.forEach((el, j) => j === i ? el.setAttribute('aria-current', 'true') : el.removeAttribute('aria-current'));
+      if (n) n.textContent = i + 1;
+      if (data) data.setAttribute('aria-live', user ? 'polite' : 'off');
+      if (bar && bar.scrollWidth > bar.clientWidth + 2) { const d = dots[i]; bar.scrollTo({left: d.offsetLeft - bar.clientWidth / 2 + d.offsetWidth / 2, behavior: still ? 'auto' : 'smooth'}); }
+      run();
+    };
+    const setPaused = p => { paused = p; if (pb) { pb.classList.toggle('paused', p); pb.setAttribute('aria-label', p ? 'Play slideshow' : 'Pause slideshow'); } run(); };
+    root.querySelector('.ss-prev')?.addEventListener('click', () => go(i - 1, true));
+    root.querySelector('.ss-next')?.addEventListener('click', () => go(i + 1, true));
+    dots.forEach((d, j) => d.addEventListener('click', () => go(j, true)));
+    pb?.addEventListener('click', () => setPaused(!paused));
+    root.addEventListener('keydown', e => {
+      const d = {ArrowRight: 1, ArrowLeft: -1}[e.key];
+      if (!d || !e.target.closest('button')) return;
+      e.preventDefault(); go(i + d, true);
+    });
+    const media = root.querySelector('.ss-media'), side = root.querySelector('.hxc-side');
+    (side ? [side, media] : [root]).forEach(z => { z.addEventListener('mouseenter', () => { hold = true; run(); }); z.addEventListener('mouseleave', () => { hold = false; run(); }); });
+    root.addEventListener('focusin', e => { if (e.target.closest('.ss-ctrl,.ss-dots')) { hold = true; run(); } });
+    root.addEventListener('focusout', e => { if (!root.contains(e.relatedTarget)) { hold = false; run(); } });
+    let x0 = null, y0 = null;
+    media.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, {passive: true});
+    media.addEventListener('touchend', e => {
+      if (x0 === null) return;
+      const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) go(i + (dx < 0 ? 1 : -1), true);
+      x0 = null;
+    });
+    document.addEventListener('visibilitychange', () => { if (document.hidden) clearTimeout(t); else run(); });
+    if (still) setPaused(true);
+    go(0);
+  });
+})();
+</script>
+<script>window.TYK_CONFIG = { endpoint: "" }; /* paste the form service URL here */</script>
+<script src="quiz/quiz.js"></script>
+</body>
+</html>
