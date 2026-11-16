@@ -196,7 +196,7 @@ section{padding:120px 0}
 .about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:center}
 .about-img{position:relative}
 .about-img .frame{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5}
-.about-img .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+.about-img .frame img{width:100%;height:100%;object-fit:cover;object-position:58% 20%}
 .about-img::after{content:"";position:absolute;inset:26px -26px -26px 26px;border:1px solid var(--blue);border-radius:var(--radius);z-index:-1}
 .about h2{margin:18px 0 26px}
 .about p+p{margin-top:18px}
@@ -489,6 +489,10 @@ footer{background:var(--blue-deep);color:#9fb0d6;padding:80px 0 40px;font-size:1
 .brand .logo-w{display:none}
 .nav:not(.scrolled) .brand .logo-w{display:block}
 .nav:not(.scrolled) .brand .logo-b{display:none}
+.brand .mv{height:52px;width:auto;display:block}
+.brand .mv-w{display:none}
+.nav:not(.scrolled) .brand .mv-w{display:block}
+.nav:not(.scrolled) .brand .mv-b{display:none}
 .nav:not(.scrolled) .brand .agent{color:#fff}
 .nav:not(.scrolled) .brand .agent small{color:rgba(255,255,255,.75)}
 .nav:not(.scrolled) .brand .sep{background:rgba(255,255,255,.4)}
@@ -636,7 +640,8 @@ footer{background:var(--blue-deep);color:#9fb0d6;padding:80px 0 40px;font-size:1
     <a href="#top" class="brand" aria-label="Matt Vogel, Coldwell Banker Realty">
       <img class="logo-b" src="img/cb-logo-blue.png" alt="Coldwell Banker"><img class="logo-w" src="img/cb-logo-horiz-white.png" alt="" aria-hidden="true">
       <span class="sep"></span>
-      <span class="agent">Matt Vogel<small>Realtor&reg;</small></span>
+      <img class="mv mv-w" src="img/mv-logo-white.png" alt="Matt Vogel, Realtor">
+      <img class="mv mv-b" src="img/mv-logo-navy.png" alt="Matt Vogel, Realtor">
     </a>
     <nav class="nav-links" id="links">
       <a href="#edge">Why Matt</a>
